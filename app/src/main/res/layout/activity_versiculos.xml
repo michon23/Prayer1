@@ -9,7 +9,7 @@
 
     <ScrollView
         android:id="@+id/scroll_versiculo"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="634dp"
         android:layout_marginEnd="3dp"
         app:layout_constraintBottom_toTopOf="@+id/adView"
@@ -138,8 +138,6 @@
                 android:textStyle="bold" />
 
 
-
-
         </LinearLayout>
     </ScrollView>
 
@@ -157,13 +155,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewverisiculo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:adUnitId="ca-app-pub-1008936073037880/7005912699"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

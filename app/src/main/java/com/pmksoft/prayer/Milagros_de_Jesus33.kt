@@ -1,13 +1,20 @@
 package com.pmksoft.prayer
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 
 
 class Milagros_de_Jesus33 : AppCompatActivity() {
@@ -15,6 +22,9 @@ class Milagros_de_Jesus33 : AppCompatActivity() {
         lateinit var mAdView : AdView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_milagros_de_jesus33)
+        //remote config
+
+
         MobileAds.initialize(this) {}
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
@@ -117,6 +127,10 @@ class Milagros_de_Jesus33 : AppCompatActivity() {
 
 
 
+
+    }
+
+    private fun displayWelcomeMessage() {
 
     }
 }

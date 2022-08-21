@@ -12,15 +12,15 @@ import com.google.android.gms.ads.AdView
 
 
 class Oracion_del_dia : AppCompatActivity() {
-    lateinit var mAdView : AdView
+    lateinit var ads_oracion_del_dia : AdView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_oracion_del_dia)
         /////////////////////////////////////////////////////
         MobileAds.initialize(this) {}
-        mAdView = findViewById(R.id.adView)
+        ads_oracion_del_dia = findViewById(R.id.ads_oracion_del_dia)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        ads_oracion_del_dia.loadAd(adRequest)
         /////////////////////////////////////////////////////
         val cuadro_oracion:TextView=findViewById(R.id.oracion_del_dia_)
         //toma la fecha del dispositivo

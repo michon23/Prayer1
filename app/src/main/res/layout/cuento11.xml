@@ -11,37 +11,40 @@
         android:id="@+id/titulo_cuento15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
         android:text="@string/cuento11_Sanson"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img_sanson"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewcuento11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:adUnitId="ca-app-pub-1008936073037880/2012891724"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView18"></com.google.android.gms.ads.AdView>
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="635dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:id="@+id/scrollView18"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15">
+        app:layout_constraintTop_toBottomOf="@+id/img_sanson"
+        tools:ignore="UnknownIdInLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,6 +61,85 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_sanson"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/bt_me_gusta"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/me_gusta"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_sanson"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/me_gusta" />
+
+    <ImageButton
+        android:id="@+id/bt_no_me_gusta"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="37dp"
+
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/no_me_gusta"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView18"
+        app:layout_constraintEnd_toStartOf="@+id/img_sanson"
+        app:layout_constraintStart_toEndOf="@+id/tv_no_mg"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/no_me_gusta" />
+
+    <TextView
+        android:id="@+id/cantidad_me_gusta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/md_indigo_700"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_me_gusta"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
+        tools:text="555" />
+
+    <TextView
+        android:id="@+id/tv_no_mg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="?attr/colorError"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView18"
+        app:layout_constraintEnd_toStartOf="@+id/bt_no_me_gusta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
+        tools:text="5" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

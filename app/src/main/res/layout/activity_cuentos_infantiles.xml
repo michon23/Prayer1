@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_oracion_diaria"
+    android:background="@drawable/fondo_degradado"
     tools:context=".Cuentos_infantiles">
 
     <Button
+
         android:id="@+id/titulo_cuento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +39,7 @@
             android:orientation="vertical">
 
             <Button
+
                 android:id="@+id/cuento1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -146,13 +148,13 @@
         </LinearLayout>
     </ScrollView>
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewcuentosinfantiles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:adUnitId="ca-app-pub-1008936073037880/8292989924"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

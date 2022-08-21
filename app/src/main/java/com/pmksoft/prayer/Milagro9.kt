@@ -8,12 +8,12 @@ import com.google.android.gms.ads.MobileAds
 
 class Milagro9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var mAdView : AdView
+        lateinit var adViewmil9 : AdView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.milagro9)
         MobileAds.initialize(this) {}
-        mAdView = findViewById(R.id.adView)
+        adViewmil9 = findViewById(R.id.adViewadViewmil09)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        adViewmil9.loadAd(adRequest)
     }
 }

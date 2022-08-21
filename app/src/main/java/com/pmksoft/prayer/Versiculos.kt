@@ -11,15 +11,15 @@ import com.google.android.gms.ads.AdView
 
 
 class Versiculos : AppCompatActivity() {
-    lateinit var mAdView : AdView
+    lateinit var adViewverisiculo : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_versiculos)
         MobileAds.initialize(this) {}
-        mAdView = findViewById(R.id.adView)
+        adViewverisiculo = findViewById(R.id.adViewverisiculo)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        adViewverisiculo.loadAd(adRequest)
 
 
 

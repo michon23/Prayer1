@@ -8,13 +8,13 @@ import com.google.android.gms.ads.AdView
 
 class Vida_Jesus_de_Nazaret : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var mAdView : AdView
+        lateinit var adViewjesmilagro : AdView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.vida_jesus_de_nazaret)
         MobileAds.initialize(this) {}
-        mAdView = findViewById(R.id.adView)
+        adViewjesmilagro = findViewById(R.id.adViewjesmilagro)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        adViewjesmilagro.loadAd(adRequest)
 
     }
 }

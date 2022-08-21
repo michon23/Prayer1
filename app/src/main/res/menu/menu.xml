@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorito"
+        android:title="verisiculos Favorito"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        app:showAsAction="ifRoom"
+        />
+    <item
+          android:id="@+id/compartir"
+         android:title="Compartir"
+         android:icon="@drawable/ic_baseline_share_24"
+         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/politica_privacidad"
+        android:title="Politica de privacidad"
+        android:icon="@drawable/ic_baseline_article_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sugerencias"
+        android:title="Suguerir sugerencias"
+        android:icon="@drawable/ic_baseline_insert_comment_24"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

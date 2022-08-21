@@ -8,14 +8,14 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 
 class Oraciones_infantiles : AppCompatActivity() {
-    lateinit var mAdView : AdView
+    lateinit var adViewOraconinfantil : AdView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_oraciones_infantiles)
         MobileAds.initialize(this) {}
-        mAdView = findViewById(R.id.adView)
+        adViewOraconinfantil = findViewById(R.id.adViewOraconinfantil)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        adViewOraconinfantil.loadAd(adRequest)
 
     }
 }

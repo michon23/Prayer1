@@ -6,13 +6,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/new_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/new_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prayer"
         tools:targetApi="31">
@@ -67,10 +68,7 @@
         <activity
             android:name=".Milagros_de_Jesus33"
             android:exported="false" />
-        <activity
-            android:name=".Los33MilagrosDeJesus"
-            android:exported="false" />
-        <activity
+
             android:name=".Cuento15"
             android:exported="false" />
         <activity
@@ -108,7 +106,8 @@
             android:exported="false" />
         <activity
             android:name=".Cuento3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Cuento2"
             android:exported="false" />
@@ -129,7 +128,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -137,10 +138,20 @@
             </intent-filter>
             <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
 
-        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-1008936073037880~2998391099 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1008936073037880~2998391099" />
+
+        
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
 
     </application>
 
