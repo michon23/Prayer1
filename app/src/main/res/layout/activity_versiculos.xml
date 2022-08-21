@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oracion_diaria"
+    tools:context=".Versiculos">
+
+    <ScrollView
+        android:id="@+id/scroll_versiculo"
+        android:layout_width="411dp"
+        android:layout_height="634dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_verisculo"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_versiculo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Colosenses_3_23_24"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_400"
+                android:padding="10dp"
+                android:text="@string/Salmo_23_6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_versiculo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Hebreos_12_14"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo4"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@color/md_brown_400"
+                android:padding="10dp"
+                android:text="@string/Corintios1_15_22"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_versiculo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Corintios2_5_1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_400"
+                android:padding="10dp"
+                android:text="@string/Romanos14_8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_versiculo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Hebreos_12_1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_400"
+                android:padding="10dp"
+                android:text="@string/Deuteronomio_8_3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Levítico_20_26"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_400"
+                android:padding="10dp"
+                android:text="@string/Génesis_1_29"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_brown_300"
+                android:padding="10dp"
+                android:text="@string/Salmos_18_2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_titulo_verisculo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/titulo_versiculos"
+        android:textAlignment="center"
+        android:textColor="@color/md_brown_900"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_versiculo"></com.google.android.gms.ads.AdView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

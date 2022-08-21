@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_amber_100"
+    tools:context=".Oraciones_infantiles">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="@string/bt_como_leer_la_biblia"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/oracion_inf1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia2"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/oracion_inf3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf4"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf5"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/Oracion5"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf6"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia6"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf7"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia7"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf8"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia8"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf9"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia9"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/oracion_inf10"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/guia10"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

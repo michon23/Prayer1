@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oracion_diaria"
+    tools:context=".Cuentos_infantiles">
+
+    <Button
+        android:id="@+id/titulo_cuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/titulo_cuentos_infantiles"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="406dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/cuento1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento1_EL_ARCA_DE_NOe"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento2_EL_REY_SALOMÓN_Reyes_3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento3_JONÁS_Y_EL_GRANPEZ"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento4_LA_CREACIÓN"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento5_JOSE_EL_ESCLAVO_Génesis_39_41"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento6_EL_HIJO_PRÓDIGO"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento7_DAVID_Y_GOLIAT"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento8_Los_Diez_Mandamientos"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento9_Los_Reyes_Magos"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento10_El_Primer_milagrode_Jesús"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento11_Sanson"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento12_El_Mar_Rojo"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento13_Sodoma_y_Gomorra"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento14_Las_Plagas_de_Egipto"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cuento15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuento15_Jesús_elige_a_sus_discípulos"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1008936073037880~2998391099"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ></com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

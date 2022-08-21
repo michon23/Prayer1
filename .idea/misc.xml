@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/drawable/fondo_degradado.xml" value="0.1" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/drawable/material_boton.xml" value="0.1" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_cuentos_infantiles.xml" value="0.16" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_cuentos_infantiles1.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_los33_milagros_de_jesus.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_main.xml" value="0.4379391100702576" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_milagros_de_jesus33.xml" value="0.33" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_oracion_del_dia.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_oraciones_infantiles.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/activity_versiculos.xml" value="0.2" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento1.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento10.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento11.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento12.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento13.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento14.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento15.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento2.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento3.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento4.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento5.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento6.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento7.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento8.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/cuento9.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/item_cuento_infantil.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/item_oraciones_infantiles.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro1.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro10.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro11.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro12.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro13.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro14.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro15.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro2.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro3.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro4.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro5.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro6.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro7.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro8.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/milagro9.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/texto_milagros_de_jesus.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/layout/vida_jesus_de_nazaret.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ever_/OneDrive/Escritorio/Prayer/app/src/main/res/mipmap-anydpi-v26/arca_de_noe.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
