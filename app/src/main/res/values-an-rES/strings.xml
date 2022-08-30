@@ -367,4 +367,5 @@ Santiago 5:15</string>
     <string name="titulo_pntlla_princ_versiculo">Gerador de Versiculos</string>
     <string name="bible">Biblia</string>
     <string name="leer_bible">Leer Biblia</string>
+    <string name="escuchar">Escuchar</string>
 </resources>

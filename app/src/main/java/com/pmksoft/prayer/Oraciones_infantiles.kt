@@ -26,6 +26,13 @@ class Oraciones_infantiles : AppCompatActivity() {
 
         }
 
+        val boton_audio_bible:Button=findViewById(R.id.boton_audio_bible)
+        boton_audio_bible.setOnClickListener {
+            var lanzar_web_bible_audio = Intent(this, AudioBibLe::class.java)
+            startActivity(lanzar_web_bible_audio)
+
+        }
+
 
     }
 }

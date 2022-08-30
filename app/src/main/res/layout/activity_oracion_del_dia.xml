@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
+        android:layout_height="0dp"
         android:background="@drawable/fondo_degradado"
         android:text="@string/bt_oracion_diaria"
         android:textAlignment="center"

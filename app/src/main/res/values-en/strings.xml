@@ -393,4 +393,5 @@ Jeremiah 15:20</string>
     <string name="titulo_pntlla_princ_versiculo">Gerador de Versiculos</string>
     <string name="bible">The Bible</string>
     <string name="leer_bible">read bible</string>
+    <string name="escuchar">Escuchar</string>
 </resources>
