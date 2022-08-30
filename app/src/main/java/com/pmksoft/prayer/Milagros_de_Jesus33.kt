@@ -124,13 +124,78 @@ class Milagros_de_Jesus33 : AppCompatActivity() {
             startActivity(milagro15)
 
         }
+        val milagro16:Button=findViewById(R.id.milagro16)
+        milagro16.setOnClickListener {
+            var milagro16 = Intent(this, Milagro16::class.java)
+            startActivity(milagro16)
+
+        }
+        val milagro17:Button=findViewById(R.id.milagro17)
+        milagro17.setOnClickListener {
+            var milagro17 = Intent(this, Milagro17::class.java)
+            startActivity(milagro17)
+
+        }
+        val milagro18:Button=findViewById(R.id.milagro18)
+        milagro18.setOnClickListener {
+            var milagro18 = Intent(this, Milagro18::class.java)
+            startActivity(milagro18)
+
+        }
+        val milagro19:Button=findViewById(R.id.milagro19)
+        milagro19.setOnClickListener {
+            var milagro19 = Intent(this, Milagro19::class.java)
+            startActivity(milagro19)
+
+        }
+        val milagro20:Button=findViewById(R.id.milagro20)
+        milagro20.setOnClickListener {
+            var milagro20 = Intent(this, Milagro20::class.java)
+            startActivity(milagro20)
+
+        }
+        val milagro21:Button=findViewById(R.id.milagro21)
+        milagro21.setOnClickListener {
+            var milagro21 = Intent(this, Milagro21::class.java)
+            startActivity(milagro21)
+
+        }
+        val milagro22:Button=findViewById(R.id.milagro22)
+        milagro22.setOnClickListener {
+            var milagro22 = Intent(this, Milagro22::class.java)
+            startActivity(milagro22)
+
+        }
+        val milagro23:Button=findViewById(R.id.milagro23)
+        milagro23.setOnClickListener {
+            var milagro23 = Intent(this, Milagro23::class.java)
+            startActivity(milagro23)
+
+        }
+        val milagro24:Button=findViewById(R.id.milagro24)
+        milagro24.setOnClickListener {
+            var milagro24 = Intent(this, Milagro24::class.java)
+            startActivity(milagro24)
+
+        }
+        val milagro25:Button=findViewById(R.id.milagro25)
+        milagro25.setOnClickListener {
+            var milagro25 = Intent(this, Milagro25::class.java)
+            startActivity(milagro25)
+
+        }
+        val milagro26:Button=findViewById(R.id.milagro26)
+        milagro26.setOnClickListener {
+            var milagro26 = Intent(this, Milagro26::class.java)
+            startActivity(milagro26)
+
+        }
+
 
 
 
 
     }
 
-    private fun displayWelcomeMessage() {
 
-    }
 }

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cuento7"
-    android:background="@color/fondo_oracion_diaria">
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Cuento7">
 
     <TextView
         android:id="@+id/titulo_cuento15"
@@ -15,9 +15,12 @@
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img_david_goliat"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewcuento7"
@@ -25,22 +28,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="1dp"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-1008936073037880/1919153267"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView14"></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
     <ScrollView
         android:id="@+id/scrollView14"
         android:layout_width="match_parent"
-        android:layout_height="524dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewcuento7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_david_goliat"
@@ -67,78 +65,34 @@
         android:layout_width="200dp"
         android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play_boton_cuenot7"
+        app:layout_constraintStart_toEndOf="@+id/pausa_boton_cuento7"
         app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/bt_me_gusta"
+        android:id="@+id/play_boton_cuenot7"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="12dp"
 
-        android:background="@drawable/me_gusta"
-
+        android:background="@drawable/play_img"
         app:layout_constraintBottom_toTopOf="@+id/scrollView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_david_goliat"
         app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/me_gusta" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/bt_no_me_gusta"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="103dp"
-        android:layout_marginEnd="37dp"
+        android:id="@+id/pausa_boton_cuento7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        android:layout_marginBottom="1dp"
-        android:background="@drawable/no_me_gusta"
+        android:background="@drawable/ic_baseline_pause_circle_filled_24"
         app:layout_constraintBottom_toTopOf="@+id/scrollView14"
         app:layout_constraintEnd_toStartOf="@+id/img_david_goliat"
-        app:layout_constraintStart_toEndOf="@+id/tv_no_mg"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/no_me_gusta" />
-
-    <TextView
-        android:id="@+id/cantidad_me_gusta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="26dp"
-        android:textColor="@color/md_indigo_700"
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toTopOf="@+id/scrollView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_me_gusta"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:text="555" />
-
-    <TextView
-        android:id="@+id/tv_no_mg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginBottom="1dp"
-        android:textColor="?attr/colorError"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView14"
-        app:layout_constraintEnd_toStartOf="@+id/bt_no_me_gusta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:text="5" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

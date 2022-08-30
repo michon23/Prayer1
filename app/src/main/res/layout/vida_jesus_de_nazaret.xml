@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vida_Jesus_de_Nazaret"
-    android:background="@color/fondo_oracion_diaria">
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Vida_Jesus_de_Nazaret">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/vida_de_jesus"
+
+        android:text="@string/titulo_generador_de_versiculo"
         android:textAlignment="center"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewjesmilagro"
         android:layout_width="wrap_content"
@@ -29,33 +30,50 @@
         app:adUnitId="ca-app-pub-1008936073037880/3601854301"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        ></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
-    <ScrollView
-        android:id="@+id/scrollView8"
+    <TextView
+        android:id="@+id/text_versiculo"
         android:layout_width="match_parent"
-        android:layout_height="655dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_height="0dp"
+        android:hint="@string/generar_versiculos"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColorHint="#004D40"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_generar_versiculo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="UnknownIdInLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_generar_versiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btn_generar_versiculo"
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/texto_vida_de_jesus_de_nazaret"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </ScrollView>
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adViewjesmilagro"
+        app:layout_constraintEnd_toStartOf="@+id/bt_compartir_GenVer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_versiculo" />
+
+    <ImageButton
+        android:id="@+id/bt_compartir_GenVer"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_baseline_share_24"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/adViewjesmilagro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_generar_versiculo"
+        app:layout_constraintTop_toBottomOf="@+id/text_versiculo"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/ic_baseline_share_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

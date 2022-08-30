@@ -12,40 +12,35 @@
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
+
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-1008936073037880/8318994366"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView6"></com.google.android.gms.ads.AdView>
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
     <ScrollView
-        android:id="@+id/scrollView6"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck">
-
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/img_oracion_diaria"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="92dp"
+
+
+                android:layout_marginTop="28dp"
                 app:layout_constraintBottom_toTopOf="@+id/bt_oracion_diaria"
                 app:layout_constraintEnd_toStartOf="@+id/img_oracion_infantil_prin"
                 app:layout_constraintStart_toStartOf="parent"
@@ -57,8 +52,10 @@
                 android:id="@+id/img_oracion_infantil_prin"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_marginTop="28dp"
                 app:layout_constraintBottom_toTopOf="@+id/bt_como_leer_bl"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_oracion_diaria"
@@ -70,9 +67,10 @@
                 android:id="@+id/img_versiculo_day_prin"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="92dp"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_marginTop="24dp"
                 app:layout_constraintBottom_toTopOf="@+id/bt_versiculo_day_prin"
                 app:layout_constraintEnd_toStartOf="@+id/img_cuentos_infantiles_prin"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,8 +82,11 @@
                 android:id="@+id/img_cuentos_infantiles_prin"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="8dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="24dp"
                 app:layout_constraintBottom_toTopOf="@+id/bt_cuentos_infantiles_prin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_versiculo_day_prin"
@@ -97,11 +98,11 @@
                 android:id="@+id/img_33_milagros_jesus"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="92dp"
+
+
                 app:layout_constraintBottom_toTopOf="@+id/bt_33_milagros_jesus"
                 app:layout_constraintEnd_toStartOf="@+id/img_vida_jesus_princ"
+                app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bt_versiculo_day_prin"
                 tools:ignore="SpeakableTextPresentCheck"
@@ -112,8 +113,11 @@
                 android:id="@+id/img_vida_jesus_princ"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+
                 app:layout_constraintBottom_toTopOf="@+id/bt_jesus_princ"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_33_milagros_jesus"
@@ -126,11 +130,13 @@
                 android:id="@+id/bt_oracion_diaria"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="92dp"
 
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:background="@drawable/material_boton"
                 android:text="@string/bt_oracion_diaria"
+                android:textAllCaps="true"
                 app:layout_constraintBottom_toTopOf="@+id/img_versiculo_day_prin"
                 app:layout_constraintEnd_toStartOf="@+id/bt_como_leer_bl"
                 app:layout_constraintStart_toStartOf="parent"
@@ -141,9 +147,10 @@
                 android:id="@+id/bt_como_leer_bl"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+
                 android:background="@drawable/material_boton"
-                android:text="@string/bt_como_leer_la_biblia"
+                android:text="@string/bible"
+                android:textAllCaps="true"
                 app:layout_constraintBottom_toTopOf="@+id/img_cuentos_infantiles_prin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/bt_oracion_diaria"
@@ -153,10 +160,13 @@
                 android:id="@+id/bt_versiculo_day_prin"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="92dp"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
                 android:background="@drawable/material_boton"
                 android:text="@string/bt_versiculos_diarios"
+                android:textAllCaps="true"
                 app:layout_constraintBottom_toTopOf="@+id/img_33_milagros_jesus"
                 app:layout_constraintEnd_toStartOf="@+id/bt_cuentos_infantiles_prin"
                 app:layout_constraintStart_toStartOf="parent"
@@ -167,9 +177,12 @@
                 android:id="@+id/bt_cuentos_infantiles_prin"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+
+
+                android:layout_marginBottom="24dp"
                 android:background="@drawable/material_boton"
                 android:text="@string/cuentos_infantilies"
+                android:textAllCaps="true"
                 app:layout_constraintBottom_toTopOf="@+id/img_vida_jesus_princ"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/bt_versiculo_day_prin"
@@ -177,25 +190,27 @@
 
             <Button
                 android:id="@+id/bt_33_milagros_jesus"
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="92dp"
                 android:background="@drawable/material_boton"
+
                 android:text="@string/milagros_jesus"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textAllCaps="true"
                 app:layout_constraintEnd_toStartOf="@+id/bt_jesus_princ"
+                app:layout_constraintHorizontal_bias="0.426"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_33_milagros_jesus"
                 tools:text="@string/milagros_jesus" />
 
             <Button
                 android:id="@+id/bt_jesus_princ"
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+
+
                 android:background="@drawable/material_boton"
-                android:text="@string/vida_de_jesus"
+                android:text="@string/titulo_generador_de_versiculo"
+                android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/bt_33_milagros_jesus"
                 app:layout_constraintTop_toBottomOf="@+id/img_vida_jesus_princ" />
@@ -203,4 +218,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

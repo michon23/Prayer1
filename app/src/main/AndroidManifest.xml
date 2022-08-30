@@ -4,7 +4,8 @@
     package="com.pmksoft.prayer">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 
     <application
@@ -17,6 +18,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prayer"
         tools:targetApi="31">
+        <activity
+            android:name=".Milagro26"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro25"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro24"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro22"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro23"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro21"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro20"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro19"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro18"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro17"
+            android:exported="false" />
+        <activity
+            android:name=".Milagro16"
+            android:exported="false" />
+        <activity
+            android:name=".PdfView"
+            android:exported="false" />
         <activity
             android:name=".Milagro15"
             android:exported="false" />
@@ -68,9 +105,10 @@
         <activity
             android:name=".Milagros_de_Jesus33"
             android:exported="false" />
-
+        <activity
             android:name=".Cuento15"
             android:exported="false" />
+
         <activity
             android:name=".Cuento14"
             android:exported="false" />
@@ -107,7 +145,7 @@
         <activity
             android:name=".Cuento3"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Cuento2"
             android:exported="false" />
@@ -129,8 +167,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.App.Starting"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -143,7 +181,6 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1008936073037880~2998391099" />
 
-        
         <service
             android:name=".MyFirebaseMessagingService"
             android:exported="false">
@@ -151,8 +188,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
-
     </application>
 
 </manifest>

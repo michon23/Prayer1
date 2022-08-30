@@ -3,23 +3,38 @@ package com.pmksoft.prayer
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.bumptech.glide.Glide
-import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.*
+import com.google.android.gms.ads.rewarded.RewardItem
+import com.google.android.gms.ads.rewarded.RewardedAd
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.iid.FirebaseInstanceIdReceiver
+import com.google.firebase.iid.internal.FirebaseInstanceIdInternal
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 private lateinit var analytics: FirebaseAnalytics
+
 class MainActivity : AppCompatActivity() {
+
+
     lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        val vistainicio = installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        vistainicio.setKeepOnScreenCondition{false}
 
         analytics = Firebase.analytics
 
@@ -30,9 +45,14 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        //////////////////////////////////////////
+        var uniqueID = UUID.randomUUID().toString()
+
+
+////////////////////////////////////////////////////////////////////////////
         val oraciondayimg: ImageView= findViewById(R.id.img_oracion_diaria)
         val boton_oracion_day: Button= findViewById(R.id.bt_oracion_diaria)
-        var url_oracionday="https://i.ibb.co/mCTyx42/prayer-gdb3efdcea-1280.jpg"
+        var url_oracionday="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Foracion_de_dia.jpg?alt=media&token=c11eed91-c68d-4630-81f5-77b9b6691f22"
         Glide.with(this).load(url_oracionday).placeholder(R.drawable.ic_launcher_foreground).into(oraciondayimg)
 
 
@@ -50,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 /////////////////////////////////////////////////////////////////////////////////////////
         val oracioninfantil: ImageView= findViewById(R.id.img_oracion_infantil_prin)
         val boton_oracion_infantil: Button= findViewById(R.id.bt_como_leer_bl)
-        var url_or_infantil="https://i.ibb.co/qg2Dpm6/child-praying-hands-g57beda3d7-1920.jpg"
+        var url_or_infantil="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Fbible.jpg?alt=media&token=cbbc4ee9-64ca-4cf8-854b-6e7916e5b9a8"
         Glide.with(this).load(url_or_infantil).placeholder(R.drawable.ic_launcher_foreground).into(oracioninfantil)
 
         oracioninfantil.setOnClickListener{
@@ -69,7 +89,7 @@ class MainActivity : AppCompatActivity() {
 
         val versiculo_diario: ImageView= findViewById(R.id.img_versiculo_day_prin)
         val boton_versiculo: Button= findViewById(R.id.bt_versiculo_day_prin)
-        var versi_day="https://i.ibb.co/b3xrSy1/bible-g64b5972d6-1920.jpg"
+        var versi_day="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Fversiculos1.jpg?alt=media&token=2a303433-fcce-4bf0-bdcb-4bf80940d435"
         Glide.with(this).load(versi_day).placeholder(R.drawable.ic_launcher_foreground).into(versiculo_diario)
 
         versiculo_diario.setOnClickListener {
@@ -86,7 +106,7 @@ class MainActivity : AppCompatActivity() {
      //
         val cuentos_infantiles: ImageView= findViewById(R.id.img_cuentos_infantiles_prin)
         val boton_cuentos_infantiles: Button=findViewById(R.id.bt_cuentos_infantiles_prin)
-        var url_cuento_infantil="https://i.ibb.co/KwbQ6pQ/moises-g3c11ef9a2-1920.jpg"
+        var url_cuento_infantil="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Fcuentos_ninos.jpg?alt=media&token=f0dc4b3e-769e-42eb-b1bc-4cfbe3498bbc"
         Glide.with(this).load(url_cuento_infantil).placeholder(R.drawable.ic_launcher_foreground).into(cuentos_infantiles)
 
         cuentos_infantiles.setOnClickListener{
@@ -105,7 +125,7 @@ class MainActivity : AppCompatActivity() {
 
         val img_33_milagros: ImageButton= findViewById(R.id.img_33_milagros_jesus)
         val boton_33_milagros: Button= findViewById(R.id.bt_33_milagros_jesus)
-        var url_biblia="https://i.ibb.co/h9yXsRb/cross-g032941e5d-1920.jpg"
+        var url_biblia="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Fmilagros_principal.jpg?alt=media&token=fb02f9ad-582d-4932-8c6b-aab44ef0036e"
         Glide.with(this).load(url_biblia).placeholder(R.drawable.ic_launcher_foreground).into(img_33_milagros)
 
         img_33_milagros.setOnClickListener{
@@ -122,7 +142,7 @@ class MainActivity : AppCompatActivity() {
 
         var btimg_v_de_jesus:ImageButton= findViewById(R.id.img_vida_jesus_princ)
         var bt_vida_jesus:Button= findViewById(R.id.bt_jesus_princ)
-        var url_jesus="https://i.ibb.co/sHphDQk/jesus-christ-g5deda9843-1920.jpg"
+        var url_jesus="https://firebasestorage.googleapis.com/v0/b/admob-a158e.appspot.com/o/imagenes_cuentos_para_ni%C3%B1os%2Fversuculos.jpg?alt=media&token=3815ca53-b7a9-4162-992c-9aec411838a5"
         Glide.with(this).load(url_jesus).placeholder(R.drawable.ic_launcher_foreground).into(btimg_v_de_jesus)
         btimg_v_de_jesus.setOnClickListener{
             var lanzar_33_milagros = Intent(this, Vida_Jesus_de_Nazaret::class.java)
@@ -132,6 +152,9 @@ class MainActivity : AppCompatActivity() {
             var lanzar_vida_jesus = Intent(this, Vida_Jesus_de_Nazaret::class.java)
             startActivity(lanzar_vida_jesus)
         }
+        ////////Menu
+
+
 
 
 
@@ -143,4 +166,25 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    /*override fun onCreateOptionsMenu(menu:Menu?): Boolean{
+        menuInflater.inflate(R.menu.menu, menu)
+
+
+        return super.onCreateOptionsMenu(menu)
+    }
+    ///////////////seleccion de menu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.favorito-> Toast.makeText(this, "Favorito", Toast.LENGTH_SHORT).show()
+            R.id.compartir-> Toast.makeText(this, "comparti", Toast.LENGTH_SHORT).show()
+            R.id.politica_privacidad-> Toast.makeText(this, "politica_privacidad", Toast.LENGTH_SHORT).show()
+            R.id.sugerencias-> Toast.makeText(this, "sugerencias", Toast.LENGTH_SHORT).show()
+        }
+
+
+        return super.onOptionsItemSelected(item)
+
+    }*/
+
+
 }

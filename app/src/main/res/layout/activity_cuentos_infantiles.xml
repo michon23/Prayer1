@@ -12,12 +12,9 @@
         android:id="@+id/titulo_cuento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="1dp"
         android:text="@string/titulo_cuentos_infantiles"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,10 +22,9 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="406dp"
-        android:layout_height="630dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewcuentosinfantiles"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_cuento">
@@ -147,6 +143,7 @@
 
         </LinearLayout>
     </ScrollView>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewcuentosinfantiles"
         android:layout_width="wrap_content"
@@ -157,7 +154,6 @@
         app:adUnitId="ca-app-pub-1008936073037880/8292989924"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        ></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

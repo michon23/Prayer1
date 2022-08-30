@@ -11,13 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-<<<<<<< HEAD
-      "versionCode": 1,
-      "versionName": "1.0",
-=======
-      "versionCode": 2,
-      "versionName": "1.1",
->>>>>>> 3e28db8 (Initial commit)
+      "versionCode": 4,
+      "versionName": "1.4",
       "outputFile": "app-release.apk"
     }
   ],

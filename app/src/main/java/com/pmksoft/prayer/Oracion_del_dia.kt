@@ -1,14 +1,15 @@
 package com.pmksoft.prayer
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.provider.ContactsContract
 import android.widget.TextView
-import java.util.*
-import com.bumptech.glide.Glide
-import com.google.android.gms.ads.MobileAds
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+import com.google.type.DateTime
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class Oracion_del_dia : AppCompatActivity() {
@@ -22,12 +23,22 @@ class Oracion_del_dia : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         ads_oracion_del_dia.loadAd(adRequest)
         /////////////////////////////////////////////////////
-        val cuadro_oracion:TextView=findViewById(R.id.oracion_del_dia_)
+        var cuadro_oracion:TextView=findViewById(R.id.oracion_del_dia_)
+
         //toma la fecha del dispositivo
         val calendario: Calendar = Calendar.getInstance()
         calendario.add(Calendar.DAY_OF_MONTH, Calendar.TUESDAY)
         val day= calendario.get(Calendar.DAY_OF_MONTH)
-        val dia = day-3
+        val dia = day
+
+
+
+
+
+
+
+
+
         //////////////////////////////////////////////////////////////////////////
         val dia1: String= getString(R.string.dia1)
        ///////////////////////////////////////////////////////////////////////////

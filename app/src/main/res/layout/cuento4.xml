@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cuento4"
-    android:background="@color/fondo_oracion_diaria">
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Cuento4">
 
     <TextView
         android:id="@+id/titulo_cuento15"
@@ -15,6 +15,7 @@
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img_la_creacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,26 +26,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="1dp"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-1008936073037880/9321918994"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView11"></com.google.android.gms.ads.AdView>
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
     <ScrollView
         android:id="@+id/scrollView11"
         android:layout_width="match_parent"
-        android:layout_height="523dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewcuento4"
         app:layout_constraintTop_toBottomOf="@+id/img_la_creacion"
-        tools:ignore="UnknownIdInLayout">
+        tools:ignore="UnknownIdInLayout"
+        tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,78 +62,33 @@
         android:layout_width="200dp"
         android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play_boton_cuenot4"
+        app:layout_constraintStart_toEndOf="@+id/pausa_boton_cuento4"
         app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/bt_me_gusta"
+        android:id="@+id/play_boton_cuenot4"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="7dp"
-
-        android:background="@drawable/me_gusta"
+        android:background="@drawable/play_img"
 
         app:layout_constraintBottom_toTopOf="@+id/scrollView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_la_creacion"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/me_gusta" />
+        app:layout_constraintTop_toTopOf="@+id/img_la_creacion"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/bt_no_me_gusta"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="103dp"
-        android:layout_marginEnd="48dp"
+        android:id="@+id/pausa_boton_cuento4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_pause_circle_filled_24"
 
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/no_me_gusta"
         app:layout_constraintBottom_toTopOf="@+id/scrollView11"
         app:layout_constraintEnd_toStartOf="@+id/img_la_creacion"
-        app:layout_constraintStart_toEndOf="@+id/tv_no_mg"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/no_me_gusta" />
-
-    <TextView
-        android:id="@+id/cantidad_me_gusta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="21dp"
-        android:textColor="@color/md_indigo_700"
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toTopOf="@+id/scrollView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_me_gusta"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:text="555" />
-
-    <TextView
-        android:id="@+id/tv_no_mg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginBottom="4dp"
-        android:textColor="?attr/colorError"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView11"
-        app:layout_constraintEnd_toStartOf="@+id/bt_no_me_gusta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_cuento15"
-        tools:text="5" />
+        app:layout_constraintTop_toTopOf="@+id/img_la_creacion"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

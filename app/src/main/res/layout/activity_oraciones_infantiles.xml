@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_amber_100"
+    android:background="@drawable/fondo_degradado"
     tools:context=".Oraciones_infantiles">
 
     <TextView
@@ -23,13 +23,14 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="600dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="0dp"
+        android:layout_height="586dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/bton_inten_web"
+
+
         app:layout_constraintEnd_toEndOf="parent"
-
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:ignore="SpeakableTextPresentCheck">
@@ -40,75 +41,105 @@
             android:orientation="vertical">
 
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf1"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia1"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf2"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia2"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf3"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia3"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf4"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia4"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf5"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:text="@string/Oracion5"
+                android:background="@drawable/fondo_degradado"
+                android:text="@string/guia5"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf6"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia6"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf7"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia7"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf8"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia8"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf9"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia9"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/oracion_inf10"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:background="@drawable/fondo_degradado"
                 android:text="@string/guia10"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
 
@@ -125,6 +156,15 @@
         app:adUnitId="ca-app-pub-1008936073037880/2288772636"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/bton_inten_web"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="@string/leer_bible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        ></com.google.android.gms.ads.AdView>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Milagro3"
-    android:background="@color/fondo_oracion_diaria">
+    android:background="@drawable/fondo_degradado">
 
     <TextView
         android:id="@+id/textView2"
@@ -20,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewadViewmil03"
         android:layout_width="wrap_content"
@@ -31,13 +32,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        ></com.google.android.gms.ads.AdView>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5"></com.google.android.gms.ads.AdView>
 
     <ScrollView
         android:id="@+id/scrollView5"
-        android:layout_width="421dp"
-        android:layout_height="655dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewadViewmil03"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"

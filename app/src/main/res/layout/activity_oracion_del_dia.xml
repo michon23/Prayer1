@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_oracion_diaria"
+    android:background="@drawable/fondo_degradado"
     tools:context=".Oracion_del_dia">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="291dp"
+        android:layout_width="match_parent"
         android:layout_height="41dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/fondo_oracion_diaria"
+        android:background="@drawable/fondo_degradado"
         android:text="@string/bt_oracion_diaria"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -24,27 +20,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/oracion_del_dia_"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="71dp"
-        android:background="@color/fondo_oracion_diaria"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-
-        tools:text="Siempre que oramos por ustedes, damos gracias a Dios, el Padre de nuestro Señor Jesucristo, pues hemos recibido noticias de su fe en Cristo Jesús y del amor que tienen por todos los santos a causa de la esperanza reservada para ustedes en el cielo. De esta esperanza ya han sabido por la palabra de verdad, que es el evangelio que ha llegado hasta ustedes. Este evangelio está dando fruto y creciendo en todo el mundo, como también ha sucedido entre ustedes desde el día en que supieron de la gracia de Dios y la comprendieron plenamente. Colosenses 1:3-6  Señor nuestro Dios, alabamos tu nombre, porque podemos dar testimonio de lo que vemos y oímos, de todo el bien que nos has dado. Que estemos unidos con firmeza y fidelidad, esperando el día glorioso cuando tu mano todopoderosa prevalezca en victoria y ponga fin a tantos males entre nosotros. Ese día serás alabado a lo largo de todas las naciones y todo se revestirá de lo nuevo, para la gloria de tu gran nombre. Amén." />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/ads_oracion_del_dia"
@@ -52,12 +30,45 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-1008936073037880/5666826583"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ads_oracion_del_dia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/oracion_del_dia_"></com.google.android.gms.ads.AdView>
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/oracion_del_dia_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_degradado"
+                android:text="TextView"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ads_oracion_del_dia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck"
+                tools:text="Siempre que oramos por ustedes, damos gracias a Dios, el Padre de nuestro Señor Jesucristo, pues hemos recibido noticias de su fe en Cristo Jesús y del amor que tienen por todos los santos a causa de la esperanza reservada para ustedes en el cielo. De esta esperanza ya han sabido por la palabra de verdad, que es el evangelio que ha llegado hasta ustedes. Este evangelio está dando fruto y creciendo en todo el mundo, como también ha sucedido entre ustedes desde el día en que supieron de la gracia de Dios y la comprendieron plenamente. Colosenses 1:3-6  Señor nuestro Dios, alabamos tu nombre, porque podemos dar testimonio de lo que vemos y oímos, de todo el bien que nos has dado. Que estemos unidos con firmeza y fidelidad, esperando el día glorioso cuando tu mano todopoderosa prevalezca en victoria y ponga fin a tantos males entre nosotros. Ese día serás alabado a lo largo de todas las naciones y todo se revestirá de lo nuevo, para la gloria de tu gran nombre. Amén." />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

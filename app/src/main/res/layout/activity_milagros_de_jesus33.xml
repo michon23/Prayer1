@@ -34,11 +34,9 @@
 
     <ScrollView
         android:id="@+id/scrollView4"
-        android:layout_width="417dp"
-        android:layout_height="625dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_33_milagros">
 
         <LinearLayout
@@ -47,109 +45,186 @@
             android:orientation="vertical">
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro1" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro2" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro3" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro4" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro5" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro6" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro7" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro8" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro9" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro10" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro11" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro12" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro13" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro14" />
 
             <Button
-                android:background="@drawable/material_boton"
                 android:id="@+id/milagro15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
                 android:text="@string/titulo_milagro15" />
+
+            <Button
+                android:id="@+id/milagro16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro16" />
+
+            <Button
+                android:id="@+id/milagro17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro17" />
+
+            <Button
+                android:id="@+id/milagro18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro18" />
+
+            <Button
+                android:id="@+id/milagro19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro19" />
+
+            <Button
+                android:id="@+id/milagro20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro20" />
+
+            <Button
+                android:id="@+id/milagro21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro21" />
+
+            <Button
+                android:id="@+id/milagro22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro22" />
+
+            <Button
+                android:id="@+id/milagro23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro23" />
+
+            <Button
+                android:id="@+id/milagro24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro24" />
+
+            <Button
+                android:id="@+id/milagro25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro25" />
+
+            <Button
+                android:id="@+id/milagro26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/material_boton"
+                android:text="@string/titulo_milagro26" />
 
 
         </LinearLayout>

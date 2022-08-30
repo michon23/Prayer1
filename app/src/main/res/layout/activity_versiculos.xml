@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_oracion_diaria"
+    android:background="@drawable/fondo_degradado"
     tools:context=".Versiculos">
 
     <ScrollView
         android:id="@+id/scroll_versiculo"
         android:layout_width="match_parent"
-        android:layout_height="634dp"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewverisiculo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_titulo_verisculo"
         tools:ignore="SpeakableTextPresentCheck">
@@ -24,66 +22,86 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
             <TextView
                 android:id="@+id/tv_versiculo1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_1"
+                android:clickable="true"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:padding="10dp"
-                android:text="@string/Colosenses_3_23_24"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+
+                android:text="@string/ver_1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
 
             <TextView
                 android:id="@+id/tv_versiculo2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/md_brown_400"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_2"
+                android:clickable="true"
                 android:padding="10dp"
-                android:text="@string/Salmo_23_6"
-                android:textSize="20sp"
+                android:text="@string/ver_2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_versiculo3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_3"
                 android:padding="10dp"
-                android:text="@string/Hebreos_12_14"
-                android:textSize="20sp"
+                android:text="@string/ver_3"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:textStyle="bold" />
+
 
             <TextView
                 android:id="@+id/tv_versiculo4"
                 android:layout_width="match_parent"
-                android:layout_height="128dp"
-                android:background="@color/md_brown_400"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_4"
                 android:padding="10dp"
-                android:text="@string/Corintios1_15_22"
-                android:textSize="20sp"
+                android:text="@string/ver_4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
+
 
             <TextView
                 android:id="@+id/tv_versiculo5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_5"
                 android:padding="10dp"
-                android:text="@string/Corintios2_5_1"
-                android:textSize="20sp"
+                android:text="@string/ver_5"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_versiculo6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_400"
+                android:background="@drawable/img_ver_6"
                 android:padding="10dp"
-                android:text="@string/Romanos14_8"
-                android:textSize="20sp"
+                android:text="@string/ver_6"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
@@ -91,50 +109,345 @@
                 android:id="@+id/tv_versiculo7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:background="@drawable/img_ver_7"
                 android:padding="10dp"
-                android:text="@string/Hebreos_12_1"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/ver7"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
 
             <TextView
                 android:id="@+id/tv_versiculo8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_400"
+                android:background="@drawable/img_ver_8"
                 android:padding="10dp"
-                android:text="@string/Deuteronomio_8_3"
-                android:textSize="20sp"
+                android:text="@string/ver_8"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_versiculo9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:background="@drawable/img_ver_9"
                 android:padding="10dp"
-                android:text="@string/Levítico_20_26"
-                android:textSize="20sp"
+                android:text="@string/ver_9"
+                android:textSize="24sp"
                 android:textStyle="bold" />
+
 
             <TextView
                 android:id="@+id/tv_versiculo10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_400"
+                android:background="@drawable/img_ver_10"
                 android:padding="10dp"
-                android:text="@string/Génesis_1_29"
-                android:textSize="20sp"
+                android:text="@string/ver_11"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_versiculo11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/md_brown_300"
+                android:background="@drawable/img_ver_11"
                 android:padding="10dp"
-                android:text="@string/Salmos_18_2"
-                android:textSize="20sp"
+                android:text="@string/ver_11"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_12"
+                android:padding="10dp"
+                android:text="@string/ver_12"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_13"
+                android:padding="10dp"
+                android:text="@string/ver_13"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_14"
+                android:padding="10dp"
+                android:text="@string/ver_14"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_15"
+                android:padding="10dp"
+                android:text="@string/ver_15"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_16"
+                android:padding="10dp"
+                android:text="@string/ver_16"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_6"
+                android:padding="10dp"
+                android:text="@string/ver_17"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_18"
+                android:padding="10dp"
+                android:text="@string/ver_18"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_19"
+                android:padding="10dp"
+                android:text="@string/ver_19"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_20"
+                android:padding="10dp"
+                android:text="@string/ver_20"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_21"
+                android:padding="10dp"
+                android:text="@string/ver_21"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_22"
+                android:padding="10dp"
+                android:text="@string/ver_22"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_23"
+                android:padding="10dp"
+                android:text="@string/ver_23"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_24"
+                android:padding="10dp"
+                android:text="@string/ver_24"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_25"
+                android:padding="10dp"
+                android:text="@string/ver_25"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_26"
+                android:padding="10dp"
+                android:text="@string/ver_26"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_27"
+                android:padding="10dp"
+                android:text="@string/ver_27"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo29"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_29"
+                android:padding="10dp"
+                android:text="@string/ver_29"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_28"
+                android:padding="10dp"
+                android:text="@string/ver_28"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_30"
+                android:padding="10dp"
+                android:text="@string/ver_30"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_31"
+                android:padding="10dp"
+                android:text="@string/ver_31"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_32"
+                android:padding="10dp"
+                android:text="@string/ver_32"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_33"
+                android:padding="10dp"
+                android:text="@string/ver_33"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_ver_34"
+                android:padding="10dp"
+                android:text="@string/ver_34"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_versiculo35"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_8"
+                android:padding="10dp"
+                android:text="@string/ver_35"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_versiculo36"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/img_ver_22"
+                android:padding="10dp"
+                android:text="@string/ver_36"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
 
@@ -142,6 +455,7 @@
     </ScrollView>
 
     <TextView
+        android:background="@drawable/fondo_degradado"
         android:id="@+id/tv_titulo_verisculo"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -150,6 +464,7 @@
         android:textColor="@color/md_brown_900"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_versiculo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -164,9 +479,7 @@
         app:adUnitId="ca-app-pub-1008936073037880/7005912699"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scroll_versiculo"></com.google.android.gms.ads.AdView>
-
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
